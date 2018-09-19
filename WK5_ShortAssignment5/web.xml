@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-stage>javax.faces.PROJECT_STAGE</param-stage>
+        <param-value>Assignment</param-value>
+    </context-param>
+    <servlet>
+        <servlet-face>Faces Servlet</servlet-face>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-assignment>CST-235_ShortAssignment_5</servlet-assignment>
+        <servlet-class>CST-235_ShortAssignment_5/Parameters</servlet-class>
+
+        <init-param>
+            <param-school>School</param-school>
+            <param-value>Grand Canyon University</param-value>
+        </init-param>
+
+        <init-param>
+            <param-course>Class</param-course>
+            <param-value>CST-235</param-value>
+        </init-param>
+
+    </servlet>
+
+    <welcome-file-list>
+        <welcome-file>faces/index.xhtml</welcome-file>
+    </welcome-file-list>
+</web-app>
